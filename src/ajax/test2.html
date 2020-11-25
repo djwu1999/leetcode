@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    var myObj = {
+        name: "Bill Gates",
+        age: 62,
+        city: "Seattle"
+    };
+
+    var myJSON = JSON.stringify(myObj);
+
+    localStorage.setItem("testJSON", myJSON);
+
+    var myObj = localStorage.getItem("testJSON");
+
+
+    var myJSON1 = '{ "name":"Bill Gates",  "age":62, "city":"Seattle" }';
+    myJSON1.name = "michael";
+    console.log(myJSON);
+    console.log(JSON.parse(myJSON1));
+    console.log(myJSON1);
+    console.log(JSON.parse(myJSON1).name);
+</script>
+
+</body>
+</html>

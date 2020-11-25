@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1 id="sort"></h1>
+<h1 id="foreach"></h1>
+
+<script>
+
+    var arr = [12, 24, 35, 34];
+    document.getElementById("sort").innerHTML = myMax(arr);
+    function myMax(arr){
+        var len = arr.length;
+        var max = -Infinity;
+        while (len--) {
+            max = arr[len] > max ? arr[len] : max;
+        }
+
+        return max;
+    }
+
+    document.getElementById("foreach").innerHTML = arr.toString();
+
+
+    var txt = "";
+    var arrMap = arr.map(myMap);
+    var arrFilter = arr.filter(myFilter);
+    var sum = arr.reduce(myReduce, 100);
+    arr.forEach(myFunction);
+    document.getElementById("foreach").innerHTML = txt;
+    function myFunction(value) {
+        txt += value + "<br>";
+    }
+
+    function myMap(value, index) {
+        return (index % 2 == 1) ? value * 2 : value;
+    }
+
+    function myFilter(value, index, array) {
+        return value > 18;
+    }
+
+    function myReduce(total, value, index, array) {
+        return total + value;
+    }
+
+    document.getElementById("foreach").innerHTML = arrMap;
+    document.getElementById("foreach").innerHTML = arrFilter;
+    document.getElementById("foreach").innerHTML = sum;
+
+
+</script>
+
+</body>
+</html>

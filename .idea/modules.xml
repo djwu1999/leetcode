@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Algorithm/Algorithm.iml" filepath="$PROJECT_DIR$/Algorithm/Algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MySort/MySort.iml" filepath="$PROJECT_DIR$/MySort/MySort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sort/Sort.iml" filepath="$PROJECT_DIR$/Sort/Sort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aqs/aqs.iml" filepath="$PROJECT_DIR$/aqs/aqs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/datastructure_1/datastructure_1.iml" filepath="$PROJECT_DIR$/datastructure_1/datastructure_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/datastructure_2/datastructure_2.iml" filepath="$PROJECT_DIR$/datastructure_2/datastructure_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/datastructure_3/datastructure_3.iml" filepath="$PROJECT_DIR$/datastructure_3/datastructure_3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/datastructure_7/datastructure_7.iml" filepath="$PROJECT_DIR$/datastructure_7/datastructure_7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/guide/guide.iml" filepath="$PROJECT_DIR$/guide/guide.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jmm/jmm.iml" filepath="$PROJECT_DIR$/jmm/jmm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jvm/jvm.iml" filepath="$PROJECT_DIR$/jvm/jvm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lambda/lambda.iml" filepath="$PROJECT_DIR$/lambda/lambda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leetcode.iml" filepath="$PROJECT_DIR$/leetcode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leetcode_easy/leetcode_easy.iml" filepath="$PROJECT_DIR$/leetcode_easy/leetcode_easy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maxproduct/maxproduct.iml" filepath="$PROJECT_DIR$/maxproduct/maxproduct.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nowcoder/nowcoder.iml" filepath="$PROJECT_DIR$/nowcoder/nowcoder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recursive/recursive.iml" filepath="$PROJECT_DIR$/recursive/recursive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/socket/socket.iml" filepath="$PROJECT_DIR$/socket/socket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thinkjava/thinkjava.iml" filepath="$PROJECT_DIR$/thinkjava/thinkjava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tree/tree.iml" filepath="$PROJECT_DIR$/tree/tree.iml" />
+    </modules>
+  </component>
+</project>
