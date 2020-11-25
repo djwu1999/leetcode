@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1 id="demo"></h1>
+<h2 id="demo1"></h2>
+<h2 id="demo2"></h2>
+
+<script>
+    var i = 7;
+    let result = 0;
+    for (let i = 0; i < 10; i++) {
+        result += i;
+    }
+
+    function myFunction() {
+        var local = 15;
+    }
+    {
+        let x = 15;
+        document.getElementById("demo1").innerHTML = x;
+    }
+
+    {
+        let x = 20;
+        document.getElementById("demo2").innerHTML = x;
+    }
+
+    // document.getElementById("demo2").innerHTML = x;
+
+    {
+        carName = "Audi";
+        document.getElementById("demo2").innerHTML = carName;
+    }
+
+    var pi = 10;
+
+    {
+        const pi = Math.PI;
+    }
+
+    const car = {type: "prosche", model: "911", color: "black"};
+    car.color = "white";
+    car.owner = "Bill";
+    var text = "";
+    for (let carKey in car) {
+        text += "<li>" + car[carKey] + "</li>";
+    }
+
+
+    document.getElementById("demo2").innerHTML = text;
+
+    const x = 16;
+    {
+        const x = 12;
+        document.getElementById("demo2").innerHTML = x;
+    }
+
+    // function add(){
+    //     var counter = 0;
+    //
+    //     function plus() {
+    //         counter++;
+    //     }
+    //
+    //     plus();
+    //     return counter;
+    // }
+
+    var add = (function (){
+        var counter = 0;
+        return function () {
+            return ++counter;
+        };
+    })();
+
+    add();
+    add();
+    add();
+
+
+
+
+    console.log("counter = " + add());
+
+    console.log("x = " + x);
+
+    document.getElementById("demo2").innerHTML = x;
+
+    document.getElementById("demo").innerHTML = i + "  " + result;
+
+    var num = 1;
+    addTest(num);
+
+    function addTest(num) {
+        num += 10;
+    }
+    console.log(num);
+
+    var beaf = {name:"beaf", price:19.9};
+    objTest(beaf);
+    function objTest(obj) {
+        obj.price += 20;
+    }
+
+    console.log(beaf);
+    var temp = 9;
+    tem(temp);
+    function tem(num){
+        num = 10;
+    }
+
+    console.log(temp);
+
+
+</script>
+
+</body>
+</html>

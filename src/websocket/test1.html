@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <a href="javascript:WebSocketTest">运行WebSocket</a>
+</div>
+<script>
+    function WebSocketTest(){
+        if("WebSocket" in window){
+            alert("您的浏览器支持WebSocket!");
+
+            var ws = new WebSocket("ws://localhost:9998/echo");
+            ws.onopen = function(){
+                ws.send("发送数据");
+                alert("数据发送中");
+            };
+
+            ws.onmessage = function(evt){
+                var received_msg = evt.data;
+                alert("数据已接受...")
+            };
+
+            ws.onclose = function(){
+                alert("连接已关闭");
+            }
+        }
+
+        else{
+
+        }
+    }
+    WebSocketTest();
+</script>
+</body>
+</html>

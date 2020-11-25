@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1 id="demo"></h1>
+
+<p id="ch"></p>
+
+<p id="newCh"></p>
+
+<ul id="array"></ul>
+
+<br>
+
+<p id="method"></p>
+
+<script>
+    function toCelsius(f){
+        return (5 / 9) * (f - 32);
+    }
+
+    document.getElementById("demo").innerHTML = "";
+
+    var str = "hello wor world";
+    var ch = str.indexOf("wo");
+    document.getElementById("ch").innerHTML = ch;
+
+    var newStr = str.slice(1, 3);
+    document.getElementById("newCh").innerHTML = newStr;
+
+    // alert(typeof (str));
+    // alert(typeof (String("abc")));
+    // alert(typeof (NaN));
+
+    var myNumber = 2;
+    var txt = "";
+    while (myNumber !== Infinity) {
+        myNumber *= myNumber;
+        txt = txt + myNumber + "<br>";
+
+    }
+    document.getElementById("demo").innerHTML = typeof ((123).toString());
+
+    var fruits = ["apple", "banana", "mango"];
+    var animals = [];
+
+
+
+    fruits.push("orange");
+
+    var text = "";
+    for (var i = 0; i < fruits.length; i++) {
+        text += "<li>" + fruits[i] + "</li>";
+    }
+
+    document.getElementById("array").innerHTML = text + fruits.length + " " + animals.length + "<br>" + animals.length + animals.firstname + Array.isArray(animals).toString();
+
+    fruits.shift();
+    fruits.unshift("apple");
+
+    document.getElementById("method").innerHTML = fruits.toString() + "<br>" + fruits.join(" * ");
+
+
+</script>
+
+</body>
+</html>

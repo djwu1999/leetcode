@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+<h1 id="title" style = 'color: red'>初始化值</h1>
+
+<input id="reflash" type="button" onclick="reflash()" value="修改文本"/>
+<input id="reflash1" type="button" onclick="document.getElementById('title').style.color = 'green'" value="修改颜色"/>
+<input id="reflash2" type="button" onclick="change()" value="隐藏"/>
+
+<script>
+    // var reflash1 = document.getElementById('reflash');
+    var title = document.getElementById('title');
+    // title.innerHTML = "hello world";
+    function reflash(){
+        if(title.value === "提交"){
+            title.innerHTML = "修改后的值";
+            title.style.color = "blue";
+            title.value = "恢复";
+        }else{
+            title.innerHTML = "初始化值";
+            title.style.color = "red";
+            title.value = "提交";
+        }
+    }
+    function change(){
+        if(title.style.visibility === 'hidden'){
+            title.style.visibility = 'visible';
+        }else{
+            title.style.visibility = 'hidden';
+        }
+    }
+</script>
+
+</body>
+</html>

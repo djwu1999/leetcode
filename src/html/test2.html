@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="checkCookies()">
+
+<h1 id="title" onclick="this.innerHTML='hello'">初始值</h1>
+
+<a href="https://www.baidu.com">百度</a>
+
+<ul id="set">
+    <li id="first"></li>
+    <li id="second"></li>
+    <li id="third"></li>
+</ul>
+
+<p id="demo" style="color: red"></p>
+
+<div id="reddiv" style="background-color: red; width: 120px; height: 20px;">hello</div>
+
+<!--onchange="upperCase(this)"-->
+<input type="text" style onchange="" id="fname" />
+
+<script>
+
+    var title = document.getElementById('title');
+    var list = document.getElementById('set');
+    var first = document.getElementById('first');
+    var second = document.getElementById('second');
+    var third = document.getElementById('third');
+
+    list.children[1].innerHTML = "hello world" + list.children.length;
+
+    var i;
+
+    for (i = 0; i < list.children.length; i++) {
+        list.children[i].innerHTML = "hello the " + i + "world";
+    }
+
+    for (let child of list.children) {
+        child.innerHTML = "goodbye " + "world";
+    }
+
+    //document.getElementById('first').parentNode.removeChild(first);
+    // var li = document.createElement("li");
+    // document.body.insertBefore(li, list);
+    // list.insertBefore(li, second);
+
+    function change(ele){
+        ele.innerHTML = 'Hello World';
+    }
+
+    for (let element of document.getElementsByTagName("h1")) {
+        element.onclick = change(element);
+    }
+
+
+
+    //first.onmouseout = "this.innerHTML = 'hello first'";
+
+
+    function checkCookies(){
+        var text = "";
+        if (navigator.cookieEnabled == true) {
+            text = "Cookie 已启用";
+        }else{
+            text = "Cookie 未启用";
+        }
+
+        document.getElementById("demo").innerHTML = text;
+    }
+
+    var fname = document.getElementById("fname");
+    // fname.setAttribute("onchange", "upperCase(fname)");
+    fname.onchange = upperCase;
+
+
+    function upperCase(){
+        fname.value = fname.value.toUpperCase();
+    }
+
+    var reddiv = document.getElementById("reddiv");
+    reddiv.onmouseover = colorChange;
+    reddiv.onmouseout = colorChange;
+
+    function colorChange(){
+        if(reddiv.innerHTML === "hello")
+            reddiv.innerHTML = "goodbye";
+        else
+            reddiv.innerHTML = "hello";
+    }
+
+
+
+
+
+</script>
+
+</body>
+</html>

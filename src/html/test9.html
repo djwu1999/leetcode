@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="test1.js"></script>
+</head>
+<body>
+
+<h1 id="demo"></h1>
+<p id="demo1"></p>
+
+<button type="button" onclick="myFunction1()">计数</button><br>
+<button type="button" onclick="myFunction2()">升价</button>
+
+<script>
+    var add = (function(){
+        var counter = 0;
+        document.getElementById("demo1").innerHTML = ++counter;
+
+        return function(){return ++counter}
+
+    })();
+
+    var myFunction = function () {
+        console.log(add());
+    };
+
+    var counter1 = 0;
+
+    function add1(){
+        return ++counter1;
+    }
+
+    function myFunction1(){
+        console.log(add1());
+    }
+
+    var propsChange = (function () {
+        var beaf = {
+            name: "beaf",
+            price: 19.9,
+            type: "meat"
+        };
+
+        return function () {
+            return beaf.price ++;
+        }
+    })();
+
+    function myFunction2(){
+        console.log(propsChange());
+    }
+
+</script>
+
+<script>
+    var i = 1000;
+    log(i, 100, 200);
+    console.log(typeof ("7" - "4"))
+</script>
+
+</body>
+</html>
