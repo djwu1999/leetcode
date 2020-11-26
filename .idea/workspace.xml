@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a839bed-86f4-490f-aa2c-cb3448f15d57" name="Default Changelist" comment="" />
+    <list default="true" id="2a839bed-86f4-490f-aa2c-cb3448f15d57" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySort/src/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/MySort/src/BubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySort/src/HeapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/MySort/src/HeapSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySort/src/InsertSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/MySort/src/InsertSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySort/src/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/MySort/src/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySort/src/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/MySort/src/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySort/src/QuickSort2.java" beforeDir="false" afterPath="$PROJECT_DIR$/MySort/src/QuickSort2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySort/src/QuickSort3.java" beforeDir="false" afterPath="$PROJECT_DIR$/MySort/src/QuickSort3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySort/src/SwitchTest.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,12 +38,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="FxmlFile" />
         <option value="JavaScript File" />
         <option value="package-info" />
         <option value="HTML File" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -265,6 +275,7 @@
       <workItem from="1606192377015" duration="7790000" />
       <workItem from="1606291785569" duration="348000" />
       <workItem from="1606292161930" duration="959000" />
+      <workItem from="1606362893769" duration="1600000" />
     </task>
     <servers />
   </component>
@@ -369,6 +380,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="180" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1604170775927" />
+    <state x="564" y="330" width="407" height="162" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606405626913">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="564" y="330" width="407" height="162" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1606405626913" />
     <state x="93" y="93" width="1350" height="638" key="dock-window-1" timestamp="1604825256913">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

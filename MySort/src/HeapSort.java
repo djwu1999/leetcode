@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
-public class HeapSort {
-    public static void heapSort(int[] arr) {
+public class HeapSort implements Sort {
+    public void sort(int[] arr) {
         for (int i = arr.length / 2 - 1; i >= 0; i--)
             shiftDown(arr, arr.length - 1, i);
         for (int i = arr.length - 1; i > 0; i--) {
@@ -29,7 +29,7 @@ public class HeapSort {
 
     public static void main(String[] args) {
         int[] arr = SortTestHelper.generateRandomArray(10000, 0, 10000000);
-        heapSort(arr);
+        new HeapSort().sort(arr);
         System.out.println(SortTestHelper.isSorted(arr));
         System.out.println(Arrays.toString(arr));
     }

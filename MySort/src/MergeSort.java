@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
-public class MergeSort {
-    public static void mergeSort(int[] arr) {
+public class MergeSort implements Sort {
+    public void sort(int[] arr) {
         mergePart(arr, 0, arr.length - 1);
     }
 
@@ -39,7 +39,7 @@ public class MergeSort {
     public static void main(String[] args) {
         int[] arr = SortTestHelper.getSortedArray(10000000);
         long begin = System.currentTimeMillis();
-        mergeSort(arr);
+        new MergeSort().sort(arr);
         long end = System.currentTimeMillis();
         System.out.println(Arrays.toString(arr));
         System.out.println(SortTestHelper.isSorted(arr));

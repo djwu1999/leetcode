@@ -1,9 +1,9 @@
 import java.util.Arrays;
 import java.util.Random;
 
-public class QuickSort3 {
+public class QuickSort3 implements Sort {
 
-    public static void quickSort3(int[] arr) {
+    public void sort(int[] arr) {
         quickSort3(arr, 0, arr.length - 1);
     }
 
@@ -43,7 +43,7 @@ public class QuickSort3 {
 //        int[] arr = SortTestHelper.generateRandomArray(10000, 0, 100);
 //        int[] arr = SortTestHelper.getSortedArray(10000000);
         long begin = System.currentTimeMillis();
-        quickSort3(arr);
+        new QuickSort().sort(arr);
         long end = System.currentTimeMillis();
         System.out.println(Arrays.toString(arr));
         System.out.println(end - begin);

@@ -1,8 +1,8 @@
 import java.util.Arrays;
 
-public class InsertSort {
+public class InsertSort implements Sort {
 
-    public static void insertSort(int[] arr) {
+    public void sort(int[] arr) {
         for (int i = 1; i < arr.length; i++) {
             for (int j = i; j > 0; j--) {
                 if (arr[j] < arr[j - 1])
@@ -42,7 +42,7 @@ public class InsertSort {
 
     public static void main(String[] args) {
         int[] arr = SortTestHelper.generateRandomArray(10000, 0, 1000000);
-        insertSort1(arr);
+        new InsertSort().sort(arr);
         System.out.println(SortTestHelper.isSorted(arr));
         System.out.println(Arrays.toString(arr));
     }
